@@ -2,11 +2,12 @@ import java.util.Scanner;
 public class ClaculatorTask {
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
-         int a = 20;
-         int b = 30;
+
         System.out.println("Enter first num");
+        int a = sc.nextInt();
 
         System.out.println("Enter second num");
+        int b = sc.nextInt();
 
         //Arithmatic Operator
         System.out.println("addition(+)"+(a+b));
