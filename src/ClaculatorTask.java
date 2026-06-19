@@ -1,7 +1,10 @@
 import java.util.Scanner;
 public class ClaculatorTask {
-    public static void main(String[]args){
+    public static void main(String[]args) {
         Scanner sc = new Scanner(System.in);
+
+        while (true) {
+            System.out.println();
 
         System.out.println("Enter first num");
         int a = sc.nextInt();
@@ -9,21 +12,45 @@ public class ClaculatorTask {
         System.out.println("Enter second num");
         int b = sc.nextInt();
 
-        //Arithmatic Operator
-        System.out.println("addition(+)"+(a+b));
-        System.out.println("subtraction(-)-" + (a+b));
 
-        //Relation Operator
-        System.out.println("Equal (==)" +(a==b));
-        System.out.println("not equal(!=)" + (a!=b));
+        System.out.println("Choose Operation");
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("3. Multiplication");
+        System.out.println("4. Division");
+        System.out.println("5 Exits");
 
-        //Logical Operator
-        System.out.println("(a > 0 && b > 0)" +(a > 0 && b>0)); // And
-        System.out.println("(a > 0 || b > 0)" +(a > 0 && b > 0));
 
-        // Assigment Oprator
-        System.out.println("a += b : " + a);
-        System.out.println("b -= b : " + b);
+        System.out.print("Enter your choice: ");
+        int choice = sc.nextInt();
 
+
+        switch (choice) {
+
+            case 1:
+                System.out.println("Addition = " + (a + b));
+
+                break;
+
+            case 2:
+                System.out.println("Subtraction = " + (a - b));
+
+                break;
+
+            case 3:
+                System.out.println("Multiplication = " + (a * b));
+
+                break;
+
+            case 4:
+                if (b != 0) {
+                    System.out.println("Division = " + (a / b));
+                }
+                break;
+
+            default:
+                System.out.println("Invalid Choice");
+        }
+    }
     }
 }
