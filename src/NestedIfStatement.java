@@ -6,6 +6,8 @@ public class NestedIfStatement {
          if(hasvoterid){
              System.out.println("You can vote");
          }
+             
+
         }
     }
 }

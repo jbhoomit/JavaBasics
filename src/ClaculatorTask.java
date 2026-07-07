@@ -45,6 +45,8 @@ public class ClaculatorTask {
             case 4:
                 if (b != 0) {
                     System.out.println("Division = " + (a / b));
+                } else {
+                    System.out.println("cant divide by zero");
                 }
                 break;
 

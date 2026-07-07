@@ -1,9 +1,10 @@
 public class Autoboxing {
-    public static void main(String[]args) {
-        int a = 26;
+        public static void main(String[]args) {
+            int a = 26;
 
-        Integer num = a;
+            Integer num = a;
 
-        System.out.println(num);
+            System.out.println(num);
+        }
     }
-}
+

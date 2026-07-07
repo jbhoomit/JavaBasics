@@ -3,7 +3,7 @@ public class ContinueStatement {
 
         for(int i = 1; i <=5; i++){
 
-            if (i == 4){
+            if (i ==4){
                 continue;
             }
             System.out.println(i);
